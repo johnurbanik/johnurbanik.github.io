@@ -1,6 +1,0 @@
-[submodule "_plugins/asset_pipeline"]
-	path = _plugins/asset_pipeline
-	url = git://github.com/nexussays/jekyll-asset-pipeline.git
-[submodule "_plugins/jekyll_ts"]
-	path = _plugins/jekyll_ts
-	url = git://github.com/sheehamj13/jekyll_ts.git
