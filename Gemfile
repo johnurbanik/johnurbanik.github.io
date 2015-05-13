@@ -2,5 +2,9 @@ source 'https://rubygems.org'
 gem 'github-pages'
 
 # for asset conversion and compression
-gem 'sass', '~> 3.2'
-gem 'closure-compiler', '~> 1.1'
+gem 'sass'
+gem 'coffee-script'
+
+# For asset pipeline
+gem 'jekyll-assets'
+gem 'uglifier'
