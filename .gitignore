@@ -1,2 +1,4 @@
 .asset_cache
 asset_pipeline_errors*
+
+*.DS_Store
