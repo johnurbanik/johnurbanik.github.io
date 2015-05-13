@@ -11,6 +11,8 @@ github_username:  johnurbanik
 # Build settings
 markdown: kramdown
 
+exclude: [node_modules, .sass-cache]
+
 
 #
 # Plugin: jekyll-assets
