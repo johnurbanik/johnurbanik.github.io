@@ -6,9 +6,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./johnurbanik
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -19,7 +16,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - run: npm install
+    - run: cd johnurbanik && npm install
     - run: npm run export
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
