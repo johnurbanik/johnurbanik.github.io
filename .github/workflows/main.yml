@@ -5,6 +5,8 @@ on:
       - source
 jobs:
   build-and-deploy:
+    env:
+      working-directory: ./johnurbanik
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
