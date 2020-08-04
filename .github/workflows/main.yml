@@ -16,13 +16,15 @@ jobs:
 
     - name: Use Node.js '12.x'
       uses: actions/setup-node@v1
+      working-directory: ${{ env.working-directory}}
       with:
         node-version: '12.x'
     - run: npm install
     - run: npm run export
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
+      working-directory: ${{ env.working-directory}}
       with:
         ACCESS_TOKEN: ${{ secrets.sapper }}
         BRANCH: master
-        FOLDER: johnurbanik/__sapper__/export/repo-name
+        FOLDER: __sapper__/export/repo-name
