@@ -17,10 +17,10 @@ jobs:
       with:
         node-version: '12.x'
     - run: cd johnurbanik && npm install
-    - run: npm run export
+    - run: cd johnurbanik && npm run export
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.sapper }}
         BRANCH: master
-        FOLDER: __sapper__/export
+        FOLDER: johnurbanik/__sapper__/export
