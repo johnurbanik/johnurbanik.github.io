@@ -26,4 +26,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.sapper }}
         BRANCH: master
-        FOLDER: __sapper__/export/repo-name
+        FOLDER: __sapper__/export
