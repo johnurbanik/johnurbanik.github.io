@@ -1,11 +1,12 @@
 <style>
-  img {
-    display: block;
+  .logo {
+    display: inline-block;
     height: 50px;
     width: 50px;
+    user-select: none;
   }
 </style>
 
-<a href="/">
-  <img alt="Sapper" src='logo-192.png'>
-</a>
+<div class="logo"><h1><a href="/">
+  JU
+</a></h1></div>
